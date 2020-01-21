@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+  </head>
+
+  <body class="overflow-hidden">
+    <!-- side navigation menu -->
+    <div
+      class="w-full sm:w-full md:w-2/6 lg:w-1/6 fixed z-40 hidden"
+      id="sideNav"
+    >
+      <div class="bg-blue-800 border-r-2 border-blue-900 h-screen">
+        <!-- menu heading -->
+        <div class="bg-blue-600 border-b-2 border-blue-400">
+          <div class="py-4 text-center text-white">
+            <h3 class="text-4xl uppercase">Techlink</h3>
+            <p class="text-lg">
+              Lorem ipsum dolor sit.
+            </p>
+          </div>
+        </div>
+        <!-- end menu heading -->
+
+        <!-- menu items -->
+        <div class="mx-auto text-center">
+          <ul class="p-24">
+            <li class="p-2">
+              <a
+                href=""
+                class="uppercase text-2xl text-gray-400 hover:text-gray-200"
+                >Home</a
+              >
+            </li>
+            <li class="p-2">
+              <a
+                href=""
+                class="uppercase text-2xl text-gray-400 hover:text-gray-200"
+                >Blog</a
+              >
+            </li>
+            <li class="p-2">
+              <a
+                href=""
+                class="uppercase text-2xl text-gray-400 hover:text-gray-200"
+                >About</a
+              >
+            </li>
+            <li class="p-2">
+              <a
+                href=""
+                class="uppercase text-2xl text-gray-400 hover:text-gray-200"
+                >Contact</a
+              >
+            </li>
+            <li class="p-2">
+              <a
+                href=""
+                class="uppercase text-2xl text-gray-400 hover:text-gray-200"
+                >Terms</a
+              >
+            </li>
+            <li class="p-2">
+              <a
+                href=""
+                class="uppercase text-2xl text-gray-400 hover:text-gray-200"
+                >Products</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- end menu items -->
+
+        <!-- menu footer items -->
+        <div
+          class="bottom-0 inset-x-0 absolute py-4 border-t-2 border-blue-400 bg-blue-600"
+        >
+          <div class="text-center text-white">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
+              deserunt.
+            </p>
+          </div>
+        </div>
+        <!-- end menu footer items -->
+      </div>
+    </div>
+
+    <!-- button -->
+    <span class="fixed z-50 inset-x-0 top-0 ml-4" id="menuBtn">
+      <svg
+        class="fill-current text-black w-12 h-12 bg-gray-200 p-1 m-2 hover:opacity-75 hover:text-gray-700 cursor-pointer rounded-lg"
+        viewBox="0 -53 384 384"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+        />
+        <path
+          d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+        />
+        <path
+          d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+        />
+      </svg>
+    </span>
+
+    <div class="slider font-sourSans">
+      <div
+        class=""
+        style="
+        background: url('./img/cover.jpg'),  
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
+        background-size: cover; 
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        "
+      >
+        <div class="container w-full h-screen">
+          <div class="text-white lg:py-56 md:py-2 sm:py-40 py-40">
+            <div class="slider-progress my-8">
+              <div class="progress"></div>
+            </div>
+
+            <div class="md:w-1/3 sm:w-2/3 w-2/3">
+              <h3 class="md:text-4xl sm:text-xl text-xl">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime, distinctio!
+              </h3>
+
+              <p class="text-lg sm:text-md">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis quidem dolorum soluta nam a maiores consequuntur quos
+                voluptas possimus ratione.
+              </p>
+              <div class="py-4 my-4">
+                <a href="#0" class="underline">Launch Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class=""
+        style="
+        background: url('./img/cover02.jpg'),  
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
+        background-size: cover; 
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        "
+      >
+        <div class="container w-full h-screen">
+          <div class="text-white lg:py-56 md:py-2 sm:py-40 py-40">
+            <div class="slider-progress my-8">
+              <div class="progress"></div>
+            </div>
+
+            <div class="md:w-1/3 sm:w-2/3 w-2/3">
+              <h3 class="md:text-4xl sm:text-xl text-xl">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime, distinctio!
+              </h3>
+
+              <p class="text-lg sm:text-md">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis quidem dolorum soluta nam a maiores consequuntur quos
+                voluptas possimus ratione.
+              </p>
+              <div class="py-4 my-4">
+                <a href="#0" class="underline">Launch Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class=""
+        style="
+        background: url('./img/cover03.jpg'),  
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
+        background-size: cover; 
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        "
+      >
+        <div class="container w-full h-screen">
+          <div class="text-white lg:py-56 md:py-2 sm:py-40 py-40">
+            <div class="slider-progress my-8">
+              <div class="progress"></div>
+            </div>
+
+            <div class="md:w-1/3 sm:w-2/3 w-2/3">
+              <h3 class="md:text-4xl sm:text-xl text-xl">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime, distinctio!
+              </h3>
+
+              <p class="text-lg sm:text-md">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis quidem dolorum soluta nam a maiores consequuntur quos
+                voluptas possimus ratione.
+              </p>
+              <div class="py-4 my-4">
+                <a href="#0" class="underline">Launch Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class=""
+        style="
+        background: url('./img/cover04.jpg'),  
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
+        background-size: cover; 
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        "
+      >
+        <div class="container w-full h-screen">
+          <div class="text-white lg:py-56 md:py-2 sm:py-40 py-40">
+            <div class="slider-progress my-8">
+              <div class="progress"></div>
+            </div>
+
+            <div class="md:w-1/3 sm:w-2/3 w-2/3">
+              <h3 class="md:text-4xl sm:text-xl text-xl">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime, distinctio!
+              </h3>
+
+              <p class="text-lg sm:text-md">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis quidem dolorum soluta nam a maiores consequuntur quos
+                voluptas possimus ratione.
+              </p>
+              <div class="py-4 my-4">
+                <a href="#0" class="underline">Launch Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class=""
+        style="
+        background: url('./img/cover05.jpg'),  
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
+        background-size: cover; 
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        "
+      >
+        <div class="container w-full h-screen">
+          <div class="text-white lg:py-56 md:py-2 sm:py-40 py-40">
+            <div class="slider-progress my-8">
+              <div class="progress"></div>
+            </div>
+
+            <div class="md:w-1/3 sm:w-2/3 w-2/3">
+              <h3 class="md:text-4xl sm:text-xl text-xl">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime, distinctio!
+              </h3>
+
+              <p class="text-lg sm:text-md">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis quidem dolorum soluta nam a maiores consequuntur quos
+                voluptas possimus ratione.
+              </p>
+              <div class="py-4 my-4">
+                <a href="#0" class="underline">Launch Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class=""
+        style="
+        background: url('./img/cover06.jpg'),  
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
+        background-size: cover; 
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        "
+      >
+        <div class="container w-full h-screen">
+          <div class="text-white md:py-64">
+            <div class="slider-progress">
+              <div class="progress"></div>
+            </div>
+            <h3 class="md:text-5xl text-3xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, eum.
+            </h3>
+
+            <p class="text-xl">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae enim sapiente sint aut! Voluptates consequatur soluta
+              suscipit id quo animi labore culpa. Laborum, ex eligendi illum
+              iusto fuga suscipit deserunt ea a corporis! Iusto dolore placeat
+              facilis, vel odio repellat, tempora neque, nihil voluptatem
+              laborum magni quas similique cumque molestiae!
+            </p>
+
+            <p class="text-xl">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae enim sapiente sint aut! Voluptates consequatur soluta
+              suscipit id quo animi labore culpa. Laborum, ex eligendi illum
+              iusto fuga suscipit deserunt ea a corporis! Iusto dolore placeat
+              facilis, vel odio repellat, tempora neque, nihil voluptatem
+              laborum magni quas similique cumque molestiae!
+            </p>
+
+            <button
+              class="bg-blue-800 border-blue-800 hover:bg-blue-600 px-4 py-2 my-2 text-extrabold"
+            >
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script>
+      //for sideNav
+      var sideNav = $("#sideNav");
+      var menuBtn = $("#menuBtn");
+      menuBtn.on("click", function() {
+        if (menuBtn.hasClass("ml-64")) {
+          menuBtn.removeClass("ml-64");
+          menuBtn.addClass("ml-4");
+        } else {
+          menuBtn.removeClass("ml-4");
+          menuBtn.addClass("ml-64");
+        }
+
+        if (sideNav.hasClass("hidden")) {
+          sideNav.removeClass("hidden");
+          sideNav.addClass("block");
+        } else {
+          sideNav.removeClass("block");
+          sideNav.addClass("hidden");
+        }
+      });
+
+      //progress bar
+
+      $(document).ready(function() {
+        var time = 2;
+        var $bar, $slick, isPause, tick, percentTime;
+
+        $slick = $(".slider");
+        $slick.slick({
+          // infinite: false,
+          vertical: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+          dots: true,
+          arrows: false,
+          autoplay: true,
+          speed: 2000,
+          autoplaySpeed: 6350
+        });
+
+        $(".slider").on("wheel", function(e) {
+          e.preventDefault();
+
+          if (e.originalEvent.deltaY < 0) {
+            $(this).slick("slickNext");
+            startProgressbar();
+          } else {
+            $(this).slick("slickPrev");
+            startProgressbar();
+          }
+        });
+
+        $bar = $(".slider-progress .progress");
+
+        function startProgressbar() {
+          resetProgressbar();
+          percentTime = 0;
+          isPause = false;
+          tick = setInterval(interval, 30);
+        }
+
+        function interval() {
+          if (isPause === false) {
+            percentTime += 1 / (time + 0.1);
+            $bar.css({
+              width: percentTime + "%"
+            });
+            if (percentTime >= 100) {
+              $slick.slick("slickNext");
+              startProgressbar();
+            }
+          }
+        }
+
+        function resetProgressbar() {
+          $bar.css({
+            width: 0 + "%"
+          });
+          clearTimeout(tick);
+        }
+
+        startProgressbar();
+
+        $(".slick-next, .slick-prev, .slick-dots").click(function() {
+          startProgressbar();
+        });
+      });
+    </script>
+  </body>
+</html>
