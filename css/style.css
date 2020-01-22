@@ -11399,6 +11399,72 @@ video {
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
+/* progress bar */
+
+.slider-progress {
+  width: 20%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.slider-progress .progress {
+  width: 0%;
+  height: 5px;
+  background: #e74c3c;
+  border-radius: 10px;
+}
+
+/* skew */
+
+.background-gray {
+  background-color: #424242;
+  background-image: linear-gradient(223deg, #424242, #0a0a0a);
+  color: #fff;
+  opacity: 0.9;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 48px 48px 32px;
+  overflow: hidden;
+}
+
+.overlay:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(223deg, #ff6200, #dc2b2b);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: skew(0deg, -300deg);
+  transform: skew(0deg, -30deg);
+}
+
+.hide {
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out;
+}
+
+.show {
+  opacity: 0.9;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
+
+.bg-orange {
+  background-image: linear-gradient(223deg, #ff6200, #dc2b2b);
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
