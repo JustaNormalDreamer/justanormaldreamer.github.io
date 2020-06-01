@@ -18,4 +18,4 @@
 <li><a href="https://kenwheeler.github.io/slick/">Slick slider</a></li>
 </ul>
 
-<h4>All the image are from <a href="www.unsplash.com">Unsplash</a></h4>
+<h4>All the images are from <a href="www.unsplash.com">Unsplash</a></h4>
