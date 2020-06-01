@@ -23,10 +23,10 @@
                         e.preventDefault();
 
                         if (e.originalEvent.deltaY < 0) {
-                            $(this).slick("slickNext");
-                            startProgressbar();
-                        } else {
                             $(this).slick("slickPrev");
+                            startProgressbar();
+                        } else {                        
+                            $(this).slick("slickNext");
                             startProgressbar();
                         }
                     });
@@ -68,34 +68,33 @@
                 });
             };
 
+            // var menu = function() {
+            //     var overlayView = $('#overlayView');              
+            //     var content = $('#overlay-content');
+            //     overlayView.on('click', function() {
+            //         if(overlayView.hasClass('overlay')) {
+            //             overlayView.removeClass('overlay', '500');                       
+            //             content.hide();
+            //             overlayView.addClass('overlay-later', '500');  
+            //             $('.slides').removeClass('float-right');                                      
+            //         } 
+            //         else {
+            //             overlayView.removeClass('overlay-later', '500');                       
+            //             content.show();
+            //             overlayView.addClass('overlay', '500'); 
+            //             $('.slides').addClass('float-right');                    
+            //         }    
+            //     });              
+            // };
 
 
-            var menu = function () {
-                var menuBtn = $("#menuBtn");
-                var overlayView = $('#overlayView');
-                var btn = $('#btnShow');
-                btn.on('click', function () {
-                    if (overlayView.hasClass('show')) {
-                        overlayView.removeClass('show');
-                        overlayView.addClass('hide');
-
-                        menuBtn.removeClass('hidden');
-                        menuBtn.addClass('block');
-
-                    } else {
-                        overlayView.removeClass('hide');
-                        overlayView.addClass('show');
-
-                        menuBtn.removeClass('block');
-                        menuBtn.addClass('hidden');
-                    }
-                });
-
-                //for sideNav
-                menuBtn.on("click", function () {
-                    overlayView.addClass('show');
-                    menuBtn.removeClass('block');
-                    menuBtn.addClass('hidden');
+            var menu = function() {
+                var overlay = $('.overlay');
+                overlay.on('click', function() {    
+                    overlay.toggleClass('background-gray');               
+                    overlay.toggleClass('slide');    
+                    $('.overlay>.content').toggle('slow');
+                    $('.slider-content').toggleClass('sliders');                         
                 });
             };
 
